@@ -103,6 +103,6 @@ namespace RevitAPITrainingPlotExport
                 printManager.CombinedFile = false;// сохранение в разные файлы
                 printManager.SubmitPrint();//Печатаем с текущими настройками
             }
-        }   //Печать и и созданеи наборов 
+        }   //Печать и  созданеи наборов 
     }
 }
