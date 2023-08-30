@@ -47,7 +47,6 @@ namespace RevitAPITrainingExportToImage
                 imgOptions.HLRandWFViewsFileType = ImageFileType.PNG;
                 imgOptions.FilePath = filepath;
                 imgOptions.ShadowViewsFileType = ImageFileType.PNG;
-                imgOptions. ;
 
                 doc.ExportImage(imgOptions);
                 ts.Commit();
