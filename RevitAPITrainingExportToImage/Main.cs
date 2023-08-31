@@ -42,16 +42,16 @@ namespace RevitAPITrainingExportToImage
 
                 ImageExportList.Add(viewPlan.Id);
 
+                imgOptions.ExportRange = ExportRange.SetOfViews;
                 imgOptions.SetViewsAndSheets(ImageExportList);
-
                 imgOptions.HLRandWFViewsFileType = ImageFileType.PNG;
                 imgOptions.FilePath = filepath;
                 imgOptions.ShadowViewsFileType = ImageFileType.PNG;
+                imgOptions.ExportRange = ExportRange.SetOfViews;
 
                 doc.ExportImage(imgOptions);
+
                 ts.Commit();
-
-
             }
 
 
